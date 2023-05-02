@@ -52,4 +52,25 @@ public class Ravenclaw extends Hogwars{
     public String toString() {
         return "Ravenclaw{" + super.toString() + " smart=" + smart + ", wise=" + wise + ", witty=" + witty + ", creative=" + creative + '}';
     }
+    public void comperAnyStudentRaveclaw(Ravenclaw first, Ravenclaw second) {
+
+        int fistPoints = first.getPowerMagic() + first.getTransgression() + first.getSmart() + first.getWise() + first.getWise() + first.getWitty() + first.getCreative();
+        int secondPoints = second.getPowerMagic() + second.getTransgression() + second.getSmart() + second.getWise() + second.getWise() + second.getWitty() + second.getCreative();
+
+        if (fistPoints > secondPoints) {
+            System.out.println(first.getName() + " is better than - " + second.getName());
+        } else if (fistPoints < secondPoints) {
+            System.out.println(second.getName() + " is better than - " + first.getName());
+        } else {
+            System.out.println("They are both powerful");
+        }
+    }
 }
+class RaveclawStudent  {
+    public void print4(Ravenclaw student2) {
+        System.out.println(student2);
+    }
+
+
+}
+
